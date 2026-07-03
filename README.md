@@ -62,17 +62,6 @@ Omnifood/
 └── img/                      Photography, app screenshots, logos, icons
 ```
 
-## Installation
-
-1. Download or clone this folder.
-2. Open `index.html` directly in a browser, or serve it locally:
-   ```bash
-   npx serve .
-   # or
-   python3 -m http.server 8080
-   ```
-3. No environment variables or dependencies are required.
-
 ## Performance notes
 
 - The hero image is served as WebP with a PNG fallback via `<picture>`, and
@@ -109,9 +98,3 @@ The site is intentionally static so it can evolve without a rewrite:
 - **Auth/payments**: "Create account" / "Sign in" links in the footer are
   placeholders for a future auth flow (e.g. NextAuth or a custom JWT flow)
   and a subscription billing integration (e.g. Stripe Billing).
-
-## Deployment
-
-Any static host works as-is: Netlify, Vercel, GitHub Pages, or an S3 +
-CloudFront bucket. Update the canonical URL, Open Graph URLs, and
-`sitemap.xml` domain to match the production hostname before launch.
