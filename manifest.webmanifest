@@ -1,0 +1,13 @@
+{
+  "name": "Omnifood",
+  "short_name": "Omnifood",
+  "description": "AI-personalized healthy meals, delivered daily.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf8f2",
+  "theme_color": "#26472f",
+  "icons": [
+    { "src": "img/favicon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "img/favicon-512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}

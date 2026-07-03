@@ -1,0 +1,266 @@
+/* ==========================================================================
+   OMNIFOOD — RESPONSIVE QUERIES (desktop-first, matches base breakpoints)
+   ========================================================================== */
+
+/* ---- Below 1344px (large laptops) ---- */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.6rem;
+  }
+  .stats-grid {
+    gap: var(--space-6);
+  }
+}
+
+/* ---- Below 1200px ---- */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    text-align: center;
+  }
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .delivered-meals {
+    justify-content: center;
+  }
+  .hero-img-box {
+    grid-row: 1;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+  .hero-float-card {
+    display: none;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sustain-box {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: var(--space-7);
+  }
+  .logo-col {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ---- Below 944px (tablets) ---- */
+@media (max-width: 59em) {
+  html {
+    font-size: 52%;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 950;
+  }
+
+  .main-nav {
+    background-color: rgba(251, 248, 242, 0.98);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--dur-med) var(--ease-out);
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.4rem;
+  }
+
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-img-box {
+    min-height: 24rem;
+    order: -1;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .newsletter-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newsletter-form {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* ---- Below 704px (large phones) ---- */
+@media (max-width: 44em) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+  .heading-primary {
+    font-size: 3.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols,
+  .grid--5-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .step-img-box {
+    grid-row: 1;
+    margin-bottom: var(--space-4);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .diets {
+    grid-row: 1;
+  }
+
+  .pricing-plan--starter,
+  .pricing-plan--complete {
+    justify-self: center;
+    max-width: 50rem;
+  }
+
+  .sustain-box {
+    padding: var(--space-6) var(--space-5);
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .social-links,
+  .footer-nav {
+    justify-content: center;
+    align-items: center;
+  }
+  .social-links {
+    display: flex;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .to-top {
+    right: 1.6rem;
+    bottom: 1.6rem;
+    width: 4.4rem;
+    height: 4.4rem;
+  }
+}
+
+/* ---- Below 544px (small phones) ---- */
+@media (max-width: 34em) {
+  .header {
+    padding: 0 1.6rem;
+    height: 8rem;
+  }
+  .logo {
+    height: 2.4rem;
+  }
+
+  .heading-primary {
+    font-size: 3.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.5rem;
+    padding: 1.3rem 2.2rem;
+  }
+
+  .delivered-imgs img {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stat-number {
+    font-size: 3.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-text-box {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .faq-question {
+    font-size: 1.5rem;
+    padding: var(--space-3) var(--space-4);
+  }
+}
